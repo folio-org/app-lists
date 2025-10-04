@@ -1,6 +1,6 @@
 {
   "name": "app-lists",
-  "version": "1.1.0-SNAPSHOT.100100000000807",
+  "version": "1.1.0-SNAPSHOT.100100000000869",
   "description": "Application descriptor for the FOLIO Lists application",
   "platform": "complete",
   "dependencies": [
@@ -18,7 +18,7 @@
   "uiModules": [
     {
       "name": "folio_lists",
-      "version": "4.0.3099000000000897"
+      "version": "4.0.3099000000000901"
     }
   ]
 }

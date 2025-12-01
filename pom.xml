@@ -12,6 +12,8 @@
     <properties>
         <project.name>app-lists</project.name>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <folio-application-generator.version>1.2.0</folio-application-generator.version>
+        <maven-release-plugin.version>3.1.1</maven-release-plugin.version>
         <templatePath>${basedir}/${project.name}.template.json</templatePath>
     </properties>
 
@@ -20,7 +22,7 @@
             <plugin>
                 <groupId>org.folio</groupId>
                 <artifactId>folio-application-generator</artifactId>
-                <version>0.0.2-SNAPSHOT</version>
+                <version>${folio-application-generator.version}</version>
                 <executions>
                     <execution>
                         <goals>
@@ -36,6 +38,17 @@
                             <url>https://folio-registry.dev.folio.org</url>
                         </registry>
                     </moduleRegistries>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-release-plugin</artifactId>
+                <version>${maven-release-plugin.version}</version>
+                <configuration>
+                    <preparationGoals>clean verify</preparationGoals>
+                    <tagNameFormat>v@{project.version}</tagNameFormat>
+                    <pushChanges>false</pushChanges>
+                    <localCheckout>true</localCheckout>
                 </configuration>
             </plugin>
         </plugins>

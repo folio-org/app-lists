@@ -1,7 +1,7 @@
 {
-  "id" : "app-lists-1.2.0-SNAPSHOT.100200000011287",
+  "id" : "app-lists-1.2.0-SNAPSHOT.100200000011292",
   "name" : "app-lists",
-  "version" : "1.2.0-SNAPSHOT.100200000011287",
+  "version" : "1.2.0-SNAPSHOT.100200000011292",
   "description" : "Application descriptor for the FOLIO Lists application",
   "modules" : [ {
     "id" : "mod-lists-4.0.2-SNAPSHOT.2319",
@@ -9,9 +9,9 @@
     "version" : "4.0.2-SNAPSHOT.2319"
   } ],
   "uiModules" : [ {
-    "id" : "folio_lists-5.0.2099000000001059",
+    "id" : "folio_lists-5.0.2099000000001074",
     "name" : "folio_lists",
-    "version" : "5.0.2099000000001059"
+    "version" : "5.0.2099000000001074"
   } ],
   "dependencies" : [ {
     "name" : "app-fqm",
@@ -279,7 +279,7 @@
     }
   } ],
   "uiModuleDescriptors" : [ {
-    "id" : "folio_lists-5.0.2099000000001059",
+    "id" : "folio_lists-5.0.2099000000001074",
     "name" : "FOLIO Reporting Machine Lists",
     "requires" : [ {
       "id" : "lists",
@@ -295,7 +295,7 @@
     "permissionSets" : [ {
       "permissionName" : "module.lists.enabled",
       "displayName" : "Lists (Enable): Can view lists",
-      "subPermissions" : [ "fqm.entityTypes.collection.get", "fqm.entityTypes.item.get", "fqm.entityTypes.item.columnValues.get", "fqm.query.async.results.get", "lists.collection.get", "lists.item.get", "lists.item.contents.get", "lists.configuration.get" ],
+      "subPermissions" : [ "fqm.entityTypes.collection.get", "fqm.entityTypes.item.get", "fqm.entityTypes.item.columnValues.get", "fqm.query.async.results.get", "lists.collection.get", "lists.item.get", "lists.item.contents.get", "lists.configuration.get", "module.ui-plugin-find-user.enabled", "users.collection.get" ],
       "visible" : true
     }, {
       "permissionName" : "module.lists.refresh",

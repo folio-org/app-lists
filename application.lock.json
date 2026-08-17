@@ -1,7 +1,7 @@
 {
-  "id" : "app-lists-1.2.0-SNAPSHOT.100200000011472",
+  "id" : "app-lists-1.2.0-SNAPSHOT.100200000011802",
   "name" : "app-lists",
-  "version" : "1.2.0-SNAPSHOT.100200000011472",
+  "version" : "1.2.0-SNAPSHOT.100200000011802",
   "description" : "Application descriptor for the FOLIO Lists application",
   "modules" : [ {
     "id" : "mod-lists-4.0.2-SNAPSHOT.2325",
@@ -9,9 +9,9 @@
     "version" : "4.0.2-SNAPSHOT.2325"
   } ],
   "uiModules" : [ {
-    "id" : "folio_lists-5.0.2099000000001094",
+    "id" : "folio_lists-5.0.2099000000001105",
     "name" : "folio_lists",
-    "version" : "5.0.2099000000001094"
+    "version" : "5.0.2099000000001105"
   } ],
   "dependencies" : [ {
     "name" : "app-fqm",
@@ -279,7 +279,7 @@
     }
   } ],
   "uiModuleDescriptors" : [ {
-    "id" : "folio_lists-5.0.2099000000001094",
+    "id" : "folio_lists-5.0.2099000000001105",
     "name" : "FOLIO Reporting Machine Lists",
     "requires" : [ {
       "id" : "lists",

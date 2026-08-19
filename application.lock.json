@@ -1,12 +1,12 @@
 {
-  "id" : "app-lists-1.2.0-SNAPSHOT.100200000011803",
+  "id" : "app-lists-1.2.0-SNAPSHOT.100200000011886",
   "name" : "app-lists",
-  "version" : "1.2.0-SNAPSHOT.100200000011803",
+  "version" : "1.2.0-SNAPSHOT.100200000011886",
   "description" : "Application descriptor for the FOLIO Lists application",
   "modules" : [ {
-    "id" : "mod-lists-4.0.2-SNAPSHOT.2325",
+    "id" : "mod-lists-4.0.2-SNAPSHOT.2328",
     "name" : "mod-lists",
-    "version" : "4.0.2-SNAPSHOT.2325"
+    "version" : "4.0.2-SNAPSHOT.2328"
   } ],
   "uiModules" : [ {
     "id" : "folio_lists-5.0.2099000000001108",
@@ -19,7 +19,7 @@
     "preRelease" : "only"
   } ],
   "moduleDescriptors" : [ {
-    "id" : "mod-lists-4.0.2-SNAPSHOT.2325",
+    "id" : "mod-lists-4.0.2-SNAPSHOT.2328",
     "name" : "Lists",
     "requires" : [ {
       "id" : "entity-types",
@@ -188,7 +188,7 @@
       }
     },
     "launchDescriptor" : {
-      "dockerImage" : "folioci/mod-lists:4.0.2-SNAPSHOT.2325",
+      "dockerImage" : "folioci/mod-lists:4.0.2-SNAPSHOT.2328",
       "dockerPull" : true,
       "env" : [ {
         "name" : "JAVA_OPTIONS",

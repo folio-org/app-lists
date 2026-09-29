@@ -1,12 +1,12 @@
 {
-  "id" : "app-lists-1.2.0-SNAPSHOT.100200000012177",
+  "id" : "app-lists-1.2.0-SNAPSHOT.100200000012352",
   "name" : "app-lists",
-  "version" : "1.2.0-SNAPSHOT.100200000012177",
+  "version" : "1.2.0-SNAPSHOT.100200000012352",
   "description" : "Application descriptor for the FOLIO Lists application",
   "modules" : [ {
-    "id" : "mod-lists-4.0.2-SNAPSHOT.2331",
+    "id" : "mod-lists-4.0.2-SNAPSHOT.2350",
     "name" : "mod-lists",
-    "version" : "4.0.2-SNAPSHOT.2331"
+    "version" : "4.0.2-SNAPSHOT.2350"
   } ],
   "uiModules" : [ {
     "id" : "folio_lists-5.0.2099000000001116",
@@ -19,7 +19,7 @@
     "preRelease" : "only"
   } ],
   "moduleDescriptors" : [ {
-    "id" : "mod-lists-4.0.2-SNAPSHOT.2331",
+    "id" : "mod-lists-4.0.2-SNAPSHOT.2350",
     "name" : "Lists",
     "requires" : [ {
       "id" : "entity-types",
@@ -117,6 +117,11 @@
         "methods" : [ "GET" ],
         "pathPattern" : "/lists/configuration",
         "permissionsRequired" : [ "lists.configuration.get" ]
+      }, {
+        "methods" : [ "GET" ],
+        "pathPattern" : "/lists/related-users",
+        "permissionsRequired" : [ "lists.related-users.collection.get" ],
+        "modulePermissions" : [ "users.collection.get" ]
       } ]
     } ],
     "permissionSets" : [ {
@@ -180,6 +185,10 @@
       "permissionName" : "lists.item.versions.item.get",
       "displayName" : "Lists: Get a previous version of a list",
       "description" : "Get a previous version of a list"
+    }, {
+      "permissionName" : "lists.related-users.collection.get",
+      "displayName" : "Lists: Get related users",
+      "description" : "Get users related to the list"
     } ],
     "metadata" : {
       "user" : {
@@ -188,7 +197,7 @@
       }
     },
     "launchDescriptor" : {
-      "dockerImage" : "folioci/mod-lists:4.0.2-SNAPSHOT.2331",
+      "dockerImage" : "folioci/mod-lists:4.0.2-SNAPSHOT.2350",
       "dockerPull" : true,
       "env" : [ {
         "name" : "JAVA_OPTIONS",
